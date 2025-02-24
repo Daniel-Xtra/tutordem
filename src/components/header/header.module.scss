@@ -1,0 +1,35 @@
+.nav {
+  @apply bg-[#FFFFFF] w-full z-20 px-5 xl:px-[136px] font-sans py-4 border-b-[0.5px] border-b-neutral-200;
+
+  .container {
+    @apply flex  items-center justify-between mx-auto;
+
+    h4 {
+      @apply font-semibold tracking-[-2px];
+    }
+
+    .menu {
+      @apply items-center md:order-2 gap-x-8 font-sans flex;
+
+      .dropdown-menu {
+        @apply z-50 w-max  my-4 text-base  list-none bg-white divide-y divide-gray-100 rounded-[8px] shadow absolute top-10 right-0 p-2;
+      }
+    }
+
+    .sidebar {
+      @apply bg-[#FFFFFF] fixed top-0 right-0 bottom-0 w-full p-5 transform transition-transform duration-300 ease-in-out;
+    }
+  }
+}
+
+.mini-header {
+  @apply flex justify-between items-center font-sans border-b-[0.5px] border-b-black-50 px-5 xl:px-[136px];
+
+  li {
+    @apply p-6 text-sm cursor-pointer;
+  }
+
+  .dropdown-menu {
+    @apply z-50 w-max my-4 text-base list-none divide-y divide-gray-100 rounded-[8px] shadow absolute top-14 right-0;
+  }
+}
