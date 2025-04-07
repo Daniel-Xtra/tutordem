@@ -1,0 +1,49 @@
+.footer-background {
+  @apply mx-auto w-full bg-neutral-950 px-5 xl:px-[136px] py-20 space-y-12 font-sans;
+
+  .footer-logo {
+    @apply flex gap-6 flex-wrap items-center tracking-[-2px];
+
+    span {
+      @apply block font-normal font-manrope text-base/[28.8px] text-neutral-400 tracking-normal;
+    }
+  }
+
+  .footer-links {
+    @apply grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4 border-b-[0.5px] border-b-[#6A6A6A] pb-[60px];
+
+    .link-header {
+      @apply text-base/[22.4px] font-medium  text-[#EAEDFD] capitalize pb-4;
+    }
+
+    ul {
+      li {
+        @apply text-base/[22.4px] text-[#D0D5DD] font-normal  normal-case pb-3;
+      }
+    }
+  }
+
+  .address-socials {
+    @apply flex flex-col lg:flex-row justify-between lg:items-end gap-y-5 font-manrope;
+
+    .address {
+      p {
+        @apply font-semibold text-base/[23.2px] text-[#EAEDFD] capitalize pb-3;
+      }
+      span {
+        @apply font-normal text-sm/[28.8px] text-white block;
+      }
+    }
+    .socials {
+      @apply flex lg:justify-between gap-[10px] items-end;
+
+      .badge {
+        @apply bg-transparent border-neutral-200 border-[0.5px] flex justify-between items-center text-neutral-200  font-medium text-sm capitalize py-[10px] gap-2 px-4;
+
+        span {
+          @apply pt-[2px] hidden md:inline;
+        }
+      }
+    }
+  }
+}

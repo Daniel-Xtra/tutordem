@@ -1,0 +1,27 @@
+.nav {
+  @apply bg-white w-full z-20 px-5 xl:px-[136px] font-sans py-4 border-b-[0.5px] border-b-neutral-200;
+
+  .container {
+    @apply flex  items-center justify-between mx-auto;
+
+    h4 {
+      @apply font-semibold tracking-[-2px];
+    }
+
+    .menu {
+      @apply items-center md:order-2 gap-x-0 md:gap-x-8 font-sans flex;
+    }
+
+    .sidebar {
+      @apply bg-white fixed top-0 right-0 bottom-0 w-full p-5 transform transition-transform duration-300 ease-in-out;
+    }
+  }
+}
+
+.mini-header {
+  @apply flex justify-between items-center font-sans border-b-[0.5px] border-b-black-50 px-5 xl:px-[136px];
+
+  li {
+    @apply p-6 text-sm cursor-pointer;
+  }
+}
