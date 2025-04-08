@@ -129,7 +129,7 @@ const DocumentViewer: React.FC<DocumentModalProps> = ({
     <DialogContent
       onInteractOutside={(e) => e.preventDefault()}
       onEscapeKeyDown={(e) => e.preventDefault()}
-      className="max-w-sm sm:max-w-7xl font-sans h-[800px] flex flex-col"
+      className="max-w-[90vw] font-sans"
     >
       <DialogHeader className="sticky top-0 inset-x-0 flex flex-col sm:flex-row justify-start sm:justify-between items-start bg-neutral-100 py-4 sm:py-6 px-4 sm:px-6 lg:px-8 flex-shrink-0 gap-4 sm:gap-0">
         <div className="space-y-1 flex items-center justify-between w-full sm:w-auto">
@@ -232,7 +232,7 @@ const DocumentViewer: React.FC<DocumentModalProps> = ({
           </div>
         </div>
       </DialogHeader>
-      <div className="flex-1 px-6 sm:px-[60px] py-10 overflow-y-auto scrollbar-thin bg-neutral-950">
+      <div className="flex-1 px-6 sm:px-[60px] h-[60vh] md:h-[80vh] py-10 overflow-y-auto scrollbar-thin bg-neutral-950">
         {content}
       </div>
     </DialogContent>

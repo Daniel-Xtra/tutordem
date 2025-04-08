@@ -51,8 +51,8 @@ const PdfViewer = ({
       }
     };
 
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
   }, [onPageChange, modifiedUrl]);
 
   return (
