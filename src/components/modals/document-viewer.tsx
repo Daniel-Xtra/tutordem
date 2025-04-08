@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Icon from "../reusables/AppIcon";
-import { getDocument, GlobalWorkerOptions } from "pdfjs-dist";
+import { getDocument, GlobalWorkerOptions } from "pdfjs-dist/legacy/build/pdf";
 import {
   Dialog,
   DialogClose,
